@@ -1,0 +1,14 @@
+<h1> <%= "#{@employee.first_name} #{@employee.last_name}"  %> </h1>
+
+<h2> Alias </h2>
+<%= @employee.alias %>
+<h2> Title </h2>
+<%= @employee.title %>
+<h2> Office </h2>
+<%= @employee.office %>
+<h2> Photo </h2>
+<img src="<%=@employee.img_url%>">
+<h2> Dog Name </h2>
+<% if @employee.dog %>
+  <%= @employee.dog.name %>
+<% end %>
